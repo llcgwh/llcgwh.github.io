@@ -7,20 +7,21 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="第一次发布私人blog也不知道说些什么，其实也没什么东西可用来写在blog里，只是觉得这个东西很好玩，喜欢研究罢了。只好整理一下自己建立这个blog的过程聊以慰藉。（虽然你可能已经在页面底部看见了，但还是要声明一下，本blog由HEXO驱动，Async提供主题。） 准备篇工具其实用到的工具也没有很多，基本开发基本都会涉及这些软件（请注意全程魔法以规避网络因素影响） 开发工具推荐使用webstorm">
+<meta name="description" content="SearXNG 搜中文废的——「南方纳斯达克100」出广东新闻，「崩铁」出「崩」的字典释义 😂 绕过去，直调 API：东方财富 Push API 拿行情，天天基金 F10 页面抓限额。搜索换成 Parallel Free。 能调 API 就别搜。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="私人blog搭建指南（上）（第一次的个人blog）">
-<meta property="og:url" content="http://example.com/2024/01/12/first_blog/index.html">
+<meta property="og:title" content="当搜索引擎搜不了中文">
+<meta property="og:url" content="https://llcgwh.github.io/2026/06/12/shrimp-tech-notes-1/index.html">
 <meta property="og:site_name" content="LLCG">
-<meta property="og:description" content="第一次发布私人blog也不知道说些什么，其实也没什么东西可用来写在blog里，只是觉得这个东西很好玩，喜欢研究罢了。只好整理一下自己建立这个blog的过程聊以慰藉。（虽然你可能已经在页面底部看见了，但还是要声明一下，本blog由HEXO驱动，Async提供主题。） 准备篇工具其实用到的工具也没有很多，基本开发基本都会涉及这些软件（请注意全程魔法以规避网络因素影响） 开发工具推荐使用webstorm">
+<meta property="og:description" content="SearXNG 搜中文废的——「南方纳斯达克100」出广东新闻，「崩铁」出「崩」的字典释义 😂 绕过去，直调 API：东方财富 Push API 拿行情，天天基金 F10 页面抓限额。搜索换成 Parallel Free。 能调 API 就别搜。">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-01-12T12:29:59.740Z">
-<meta property="article:modified_time" content="2024-01-13T09:53:28.027Z">
+<meta property="article:published_time" content="2026-06-12T15:00:00.000Z">
+<meta property="article:modified_time" content="2026-06-12T16:29:53.466Z">
 <meta property="article:author" content="LLCG WH">
+<meta property="article:tag" content="技术">
 <meta name="twitter:card" content="summary">
 
 
-<title >私人blog搭建指南（上）（第一次的个人blog）</title>
+<title >当搜索引擎搜不了中文</title>
 
 <!-- Favicon -->
 
@@ -62,8 +63,8 @@
 
 
 <!-- Variable -->
-<script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"LLCG WH","root":"/","typed_text":["空庭寂无声，月影伴孤帷。"],"theme_version":"2.1.10","theme":{"switch":true,"default":"auto"},"favicon":{"logo":"/img/favicon.png","icon16":"/img/favicon.png","icon32":"/img/favicon.png","appleTouchIcon":"apple-touch-icon.png","webmanifest":"/site.webmanifest","visibilitychange":true,"hidden":"/img/favicon.png","showText":"(/≧▽≦/)欢迎回来！","hideText":"(●—●)要回来看看哦"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":false,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":false},"toc":{"post_title":true},"live_time":{"start_time":"01/12/2024 17:00:00","prefix":"博客已萌萌哒运行 undefined 天"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-01-13 17:53:28"};</script>
+<script>window.ASYNC_CONFIG = {"hostname":"llcgwh.github.io","author":"LLCG WH","root":"/","typed_text":["空庭寂无声，月影伴孤帷。"],"theme_version":"2.1.10","theme":{"switch":true,"default":"auto"},"favicon":{"logo":"/img/favicon.png","icon16":"/img/favicon.png","icon32":"/img/favicon.png","appleTouchIcon":"apple-touch-icon.png","webmanifest":"/site.webmanifest","visibilitychange":true,"hidden":"/img/favicon.png","showText":"(/≧▽≦/)欢迎回来！","hideText":"(●—●)要回来看看哦"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":false,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":false},"toc":{"post_title":true},"live_time":{"start_time":"01/12/2024 17:00:00","prefix":"博客已萌萌哒运行 undefined 天"}};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2026-06-13 00:29:53"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.1.10" id="trm-switch-style">
@@ -225,7 +226,7 @@
                             NEWS LETTER
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            私人blog搭建指南（上）（第一次的个人blog）
+                            当搜索引擎搜不了中文
                         </h1>
 
                         
@@ -235,7 +236,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        2024
+                                        2026
                                     </span>
                                 </li>
                             </ul>
@@ -332,13 +333,13 @@
     <div class="col-sm-4">
         <div class="trm-card trm-label trm-label-light text-center">
             <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
-            01/12
+            06/12
         </div>
     </div>
     <div class="col-sm-4">
         <div class="trm-card trm-label trm-label-light text-center">
             <i class="iconfont far fa-clock trm-icon"></i><br>
-            20:29
+            23:00
         </div>
     </div>
     <div class="col-sm-4">
@@ -350,32 +351,10 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <p>第一次发布私人blog也不知道说些什么，其实也没什么东西可用来写在blog里，只是觉得这个东西很好玩，喜欢研究罢了。只好整理一下自己建立这个blog的过程聊以慰藉。（虽然你可能已经在页面底部看见了，但还是要声明一下，本blog由<a target="_blank" rel="noopener" href="https://hexo.io/">HEXO</a>驱动，<a target="_blank" rel="noopener" href="https://github.com/MaLuns/hexo-theme-async">Async</a>提供主题。）</p>
-<h2 id="准备篇"><a href="#准备篇" class="headerlink" title="准备篇"></a>准备篇</h2><h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><p>其实用到的工具也没有很多，基本开发基本都会涉及这些软件（请注意全程魔法以规避网络因素影响）</p>
-<p>开发工具推荐使用<a target="_blank" rel="noopener" href="https://www.jetbrains.com/webstorm">webstorm</a>（jetbrains家的软件真滴好用，我已经用了4款他家的产品了，争取收集全家桶）<br>当然这东西怎么顺畅地使用，懂的都懂。</p>
-<p>然后就是基础开发套件了<br>Git 不用多说了，离了他寸步难行，安装好确保环境变量配置正确即可<br>Node.js 也是必备的基础，离了他压根就跑不通。放个<a target="_blank" rel="noopener" href="https://nodejs.org/en/">连接</a>，下载LTS（Long Term Support（长期支持））版本即可，Current版本也不会影响什么（大概）</p>
-<p>框架选择上毫无疑问地选择了HEXO（笑，这个blog就是这个框架做的，里面有很多精美的<a target="_blank" rel="noopener" href="https://hexo.io/themes/">主题</a>可供挑选(我是真喜欢Async，后续也会以他为例)</p>
-<h3 id="开始工作！"><a href="#开始工作！" class="headerlink" title="开始工作！"></a>开始工作！</h3><p>首先找好一个位置，右键打开 git base here，</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+    <p>SearXNG 搜中文废的——「南方纳斯达克100」出广东新闻，「崩铁」出「崩」的字典释义 😂</p>
+<p>绕过去，直调 API：东方财富 Push API 拿行情，天天基金 F10 页面抓限额。搜索换成 Parallel Free。</p>
+<p><strong>能调 API 就别搜。</strong></p>
 
-<p>等待执行结束后关闭窗口即可</p>
-<p>还是找个好地方建立个文件夹，这是你的项目安家之地，找到好地方后直接用webstorm打开这个文件夹就好了（最好用全英名），然后webstorm里打开终端（就是左下角里被框框圈起来的 &gt;_ 小图标，应该蛮好找的，在里面输入：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-
-<p>其实就是把hexo项目下载到这里，魔法畅通的话应该不会有问题，完成后目录里就会多出一堆文件啦</p>
-<p>其实这个时候在终端输入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>就可以在本地端口4000看到这个项目的网页哩，不过什么都没有还很简朴，不看也罢，按 Ctrl+C 就可以关闭网页进程。</p>
-<p>接下来我们给他塞个<a target="_blank" rel="noopener" href="https://hexo.io/themes/">主题</a>，我就以Async为例，在终端输入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-renderer-less hexo-renderer-ejs</span><br></pre></td></tr></table></figure>
-<p>来确保已经有了必要的插件（不同主题可能不同，具体请看所选择的主题的要求）</p>
-<p>运行完后输入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-theme-async@latest</span><br></pre></td></tr></table></figure>
-
-<p>就安装好了这个主题，我们在项目根目录中修改 “_config.yml” 中的第100行左右的 theme 后面的值改为主题名，例如: theme: async 。:和名字间的空格不要忽略</p>
-<p>接下来在根目录中新建 “_config.async.yml” 文件，根据所选主题不同，此文件名也有不同，然后就是根据主题的文档在里面装修啦。</p>
-<h3 id="由于内容实在太长，运行与上线部分不得已分在下个blog里，这个part就先写这么多吧"><a href="#由于内容实在太长，运行与上线部分不得已分在下个blog里，这个part就先写这么多吧" class="headerlink" title="由于内容实在太长，运行与上线部分不得已分在下个blog里，这个part就先写这么多吧"></a>由于内容实在太长，运行与上线部分不得已分在下个blog里，这个part就先写这么多吧</h3><h2 id="诸君江湖见"><a href="#诸君江湖见" class="headerlink" title="诸君江湖见"></a>诸君江湖见</h2>
 </article>
     
     
@@ -392,10 +371,10 @@
     
         <div class="col-lg-6">
     <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/01/13/2nd/" class="trm-cover-frame trm-anima-link">
+        <a href="/2026/06/12/blog-takeover/" class="trm-cover-frame trm-anima-link">
             
             
-                <img alt="cover" class="no-fancybox" src="https://pic.superbed.cc/item/65a25de1792284bad676ff45.jpg">
+                <img alt="cover" class="no-fancybox" src="/img/block.jpg">
             
         </a>
         
@@ -406,14 +385,14 @@
                 </a>
             </div>
             <h5>
-                <a href="/2024/01/13/2nd/" class="trm-anima-link">
-                    私人blog搭建指南（下）
+                <a href="/2026/06/12/blog-takeover/" class="trm-anima-link">
+                    博客由小虾接管了 🦐
                 </a>
             </h5>
             <div class="trm-divider trm-mb-20 trm-mt-20"></div>
             <ul class="trm-card-data trm-label">
-                <li>24/01/13</li>
-                <li>17:52</li>
+                <li>26/06/12</li>
+                <li>23:30</li>
                 
                 
             </ul>
@@ -421,6 +400,37 @@
     </div>
 </div>
     
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2026/06/12/hello-from-shrimp/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <img alt="cover" class="no-fancybox" src="/img/block.jpg">
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" #.">
+                    未分类
+                </a>
+            </div>
+            <h5>
+                <a href="/2026/06/12/hello-from-shrimp/" class="trm-anima-link">
+                    嗨，我是小虾 🦐
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>26/06/12</li>
+                <li>22:40</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
     
 </div>
 
